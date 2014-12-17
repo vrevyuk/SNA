@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.revyuk.socialnetworkauthorizator.InstagramFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/instagramAvatarImageView"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/instagramSignInButton"
+            android:text="LogIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/instagramSignOutButton"
+            android:text="LogOut"
+            android:enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/instagramFotoLayout"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <SurfaceView
+            android:id="@+id/instagramSurfaceView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/instagramHashTagEditText"
+            android:hint="write search tag here: #example_word"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/instagramTakeFotoButton"
+            android:enabled="false"
+            android:text="Take foto and place on instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
